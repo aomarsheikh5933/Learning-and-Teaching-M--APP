@@ -1,0 +1,4 @@
+<events>
+    <event day="Tuesdays" note="Class Database" time="1:00-3:00pm" type="class" />
+    <event day="W" note="Project Students" time="3:00-5:00pm" type="Appointment" />
+</events>

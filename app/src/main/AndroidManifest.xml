@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Root element of the Android manifest file -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Application element defining app-wide properties and components -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Diary"
+        tools:targetApi="31"> <!-- Indicates the target API level for development tools -->
+
+        <!-- Activity element defining the EventEditActivity -->
+        <activity
+            android:name=".events.EventEditActivity"
+            android:exported="false" /> <!-- Exported attribute false means the activity is not accessible by other apps -->
+
+        <!-- Activity element defining the NewsEditActivity -->
+        <activity
+            android:name=".news.NewsEditActivity"
+            android:exported="false" /> <!-- Exported attribute false means the activity is not accessible by other apps -->
+
+        <!-- Activity element defining the CourseEditActivity -->
+        <activity
+            android:name=".course.CourseEditActivity"
+            android:exported="false" /> <!-- Exported attribute false means the activity is not accessible by other apps -->
+
+        <!-- Activity element defining the ContactActivity -->
+        <activity
+            android:name=".contact.ContactActivity"
+            android:exported="false" /> <!-- Exported attribute false means the activity is not accessible by other apps -->
+
+        <!-- Activity element defining the CoursesActivity -->
+        <activity
+            android:name=".course.CoursesActivity"
+            android:exported="false" /> <!-- Exported attribute false means the activity is not accessible by other apps -->
+
+        <!-- Activity element defining the EventActivity -->
+        <activity
+            android:name=".events.EventActivity"
+            android:exported="false" /> <!-- Exported attribute false means the activity is not accessible by other apps -->
+
+        <!-- Activity element defining the NewsActivity -->
+        <activity
+            android:name=".news.NewsActivity"
+            android:exported="false" /> <!-- Exported attribute false means the activity is not accessible by other apps -->
+
+        <!-- Activity element defining the MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"> <!-- Exported attribute true means the activity is accessible by other apps -->
+
+            <!-- Intent filter specifying MainActivity as the main entry point of the app -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> <!-- Action indicating the activity is the main entry point -->
+
+                <category android:name="android.intent.category.LAUNCHER" /> <!-- Category indicating the activity should appear in the launcher -->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

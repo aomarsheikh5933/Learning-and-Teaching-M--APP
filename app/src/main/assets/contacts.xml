@@ -1,0 +1,5 @@
+<contact name="Nilanjan Banerjee" email="oyier@itc.jkuat.ac.ke" office="IT Room 302"
+    offile_hour="10-11am Mon, thursday" phone="999999999" position="Lecturer" type="faculty">
+    <course name="Mobile Computing" course_code="BIT 2223" />
+    <course name="Artificial Intelligence" course_code="BIT 2319" />
+</contact>
